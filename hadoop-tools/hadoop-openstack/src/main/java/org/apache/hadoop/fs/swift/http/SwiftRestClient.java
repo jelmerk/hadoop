@@ -1378,6 +1378,8 @@ public final class SwiftRestClient {
                                  connectTimeout);
     methodParams.setSoTimeout(socketTimeout);
     method.addRequestHeader(HEADER_USER_AGENT, SWIFT_USER_AGENT);
+    method.addRequestHeader(HEADER_CONNECTION, "close");
+
     Duration duration = new Duration();
     boolean success = false;
     try {

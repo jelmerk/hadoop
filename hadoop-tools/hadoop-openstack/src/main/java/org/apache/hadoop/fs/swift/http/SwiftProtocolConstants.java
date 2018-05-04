@@ -55,6 +55,9 @@ public class SwiftProtocolConstants {
   /** HTTP standard {@value} header */
   public static final String HEADER_CONTENT_RANGE = "Content-Range";
 
+  /** HTTP standard {@value} header */
+  public static final String HEADER_CONNECTION = "Connection";
+
   /**
    * Patten for range headers
    */
